@@ -8,18 +8,18 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <ListBox x:Name="AllActivities" HorizontalAlignment="Left" Height="228" Margin="110,106,0,0" VerticalAlignment="Top" Width="280" Loaded="AllActivities_Loaded" SelectionChanged="AllActivities_SelectionChanged"/>
-        <RadioButton x:Name="RadAll" Content="All" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="RadLand" Content="Land" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="RadWater" Content="Water" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="RadAir" Content="Air" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top" Height="14"/>
+        <RadioButton x:Name="RadAll" Content="All" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" IsChecked="True" Checked="RadAll_Checked"/>
+        <RadioButton x:Name="RadLand" Content="Land" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" Checked="RadLand_Checked"/>
+        <RadioButton x:Name="RadWater" Content="Water" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Checked="RadWater_Checked"/>
+        <RadioButton x:Name="RadAir" Content="Air" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top" Height="14" Checked="RadAir_Checked"/>
         <TextBlock HorizontalAlignment="Left" Margin="110,350,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="78" FontSize="14"/>
         <TextBlock x:Name="Description" HorizontalAlignment="Left" Margin="110,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
-        <ListBox x:Name="SelectedActivities" HorizontalAlignment="Left" Height="228" Margin="518,106,0,0" VerticalAlignment="Top" Width="236"/>
+        <ListBox x:Name="SelectedActivities" HorizontalAlignment="Left" Height="228" Margin="518,106,0,0" VerticalAlignment="Top" Width="236" Loaded="SelectedActivities_Loaded"/>
         <TextBlock HorizontalAlignment="Left" Margin="518,30,0,0" TextWrapping="Wrap" Text="Total cost:" VerticalAlignment="Top" FontSize="14"/>
         <TextBlock x:Name="TotalCost" HorizontalAlignment="Left" Margin="597,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="518,69,0,0" TextWrapping="Wrap" Text="Selected activities" VerticalAlignment="Top" FontSize="14"/>
-        <Button x:Name="AddToActivities" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="414,147,0,0" VerticalAlignment="Top" Width="85" Height="30" FontSize="16"/>
-        <Button x:Name="RemoveFromActivities" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="414,208,0,0" VerticalAlignment="Top" Width="85" Height="30" FontSize="16"/>
+        <Button x:Name="AddToActivities" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="414,147,0,0" VerticalAlignment="Top" Width="85" Height="30" FontSize="16" Click="AddToActivities_Click"/>
+        <Button x:Name="RemoveFromActivities" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="414,208,0,0" VerticalAlignment="Top" Width="85" Height="30" FontSize="16" Click="RemoveFromActivities_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="110,30,0,0" TextWrapping="Wrap" Text="Activity Planner" VerticalAlignment="Top" FontSize="36" Foreground="#FF2A3CF7"/>
     </Grid>
 </Window>

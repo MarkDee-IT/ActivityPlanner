@@ -26,16 +26,20 @@ namespace CA2
         }
 
         // Private attribute for the sake of allowing the activity type enum to be in the constructor
-        private ActivityType _activityType;
+        public ActivityType TypeOfActivity;
 
+        // Parameter constructor
         public Activity(string name, DateTime date, ActivityType typeOfActivity, decimal cost, string description)
         {
             Name = name;
             ActivityDate = date;
-            _activityType = typeOfActivity;
+            TypeOfActivity = typeOfActivity;
             Cost = cost;
             _description = description;
         }
+
+        // Blank constructor
+        public Activity() { }
 
         public int CompareTo(Activity that)
         {
