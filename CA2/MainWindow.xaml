@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox HorizontalAlignment="Left" Height="62" Margin="110,20,0,0" TextWrapping="Wrap" Text="Activity Planner" VerticalAlignment="Top" Width="280" FontSize="36" Foreground="#FF4949D8"/>
+        <ListBox x:Name="AllActivities" HorizontalAlignment="Left" Height="228" Margin="110,106,0,0" VerticalAlignment="Top" Width="280"/>
+        <RadioButton x:Name="RadAll" Content="All" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadLand" Content="Land" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadWater" Content="Water" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RadAir" Content="Air" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top" Height="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="110,350,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="78" FontSize="14"/>
+        <TextBlock x:Name="Description" HorizontalAlignment="Left" Margin="110,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+        <ListBox x:Name="SelectedActivities" HorizontalAlignment="Left" Height="228" Margin="518,106,0,0" VerticalAlignment="Top" Width="236"/>
+        <TextBlock HorizontalAlignment="Left" Margin="518,30,0,0" TextWrapping="Wrap" Text="Total cost:" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="TotalCost" HorizontalAlignment="Left" Margin="597,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="518,69,0,0" TextWrapping="Wrap" Text="Selected activities" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="AddToActivities" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="414,147,0,0" VerticalAlignment="Top" Width="85" Height="30" FontSize="16"/>
+        <Button x:Name="RemoveFromActivities" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="414,208,0,0" VerticalAlignment="Top" Width="85" Height="30" FontSize="16"/>
     </Grid>
 </Window>
